@@ -17,6 +17,7 @@ body, a
 h1, h2
 {
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h3,h4
