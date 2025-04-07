@@ -1,0 +1,25 @@
+.br{border: 1px solid red;}
+.brg{border: 1px solid green;}
+.brb{border: 1px solid blue;}
+.bry{border: 1px solid yellow;}
+
+body
+{
+    min-width: 500px;
+    line-height: 150%;
+}
+
+body, a
+{
+
+}
+
+h1, h2
+{
+    text-transform: uppercase;
+}
+
+h3,h4
+{
+
+}
