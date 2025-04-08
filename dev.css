@@ -2,7 +2,7 @@
 @import 'src/base/fonts.css';
 
 /** CORE FILES */
-@import 'src/base/_base.css';
+@import 'src/base/base.css';
 @import 'src/base/display.css';
 @import 'src/base/flex.css';
 @import 'src/base/layout.css';
