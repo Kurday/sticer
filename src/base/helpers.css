@@ -1,6 +1,6 @@
 .bg { background: rgba(0,0,0, .25); }
 .bg-w { background: rgba(255,255,255, .25); }
-.border { border: 1px solid var(--b-color); }
+.border { border: 2px solid var(--w-color); }
 
 .tn,
 .tn.inner * 

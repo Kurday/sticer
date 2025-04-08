@@ -2,6 +2,9 @@
 .t-reset,
 .t-reset.inner *
 { color: inherit !important; }
+.t-accent,
+.t-accent.inner *
+{color: var(--accent-color) !important; }
 .t-white,
 .t-white.inner *
 { color: var(--w-color) !important; }
@@ -34,6 +37,9 @@
 .bg-transparent,
 .bg-transparent.inner *
 { background: transparent !important; }
+.bg-accent, 
+.bg-accent.inner
+{background-color: var(--accent-color);}
 .bg-white,
 .bg-white.inner *
 { background: var(--w-color) !important; }

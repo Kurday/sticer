@@ -24,3 +24,152 @@ h3,h4
 {
 
 }
+
+
+/*___________________           CONST               ___________________*/
+
+
+
+.before::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 2, 2, 0.9);
+    opacity: 80%;
+    z-index: 1;
+}
+
+.line-h
+{
+    line-height: 1em;
+}
+
+
+/*___________________           HEADER               ___________________*/
+
+
+
+
+.header
+{
+    background-color: var(--accent-color);
+}
+
+.header a 
+{
+    color: white;
+}
+
+.header__logo
+{
+    width: 120px;
+    height: auto;
+}
+
+
+/* Стили для бургер-кнопки */
+
+
+.burger-btn 
+{
+    display: none;
+    width: 60px;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.burger-btn.active {
+    border: 4px solid var(--w-active);
+    opacity: 0.7; 
+    transition: 0.5s;
+}
+
+.burger-btn__spans
+{
+    height: 30px;
+    width: 30px;
+}
+
+.burger-btn span 
+{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Анимация в крестик */
+
+.burger-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.burger-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+
+
+/* <!--___________________ SECTION  MAIN SWIPER___________________  --> */
+
+
+
+
+.main__swiper
+{
+    height: 100vh;
+}
+
+.main__swiper img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+
+.main__slide-content
+{
+    position: relative; 
+    z-index: 2; 
+}
+
+.swiper-wrapper-pagination
+{
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--accent-color);
+    border-radius: 2px; 
+    width: 20px;
+    height: 4px;
+    transition: all 0.3s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 30px; 
+    background: var(--accent-active);
+  }
+
+  .swiper-pagination-bullet:hover {
+    transform: scale(1.2);
+    background: var(--accent-hover);
+  }

@@ -80,7 +80,7 @@ select.form-input
 }
 
 /* BUTTONS */
-.btn 
+/* .btn 
 {
     padding: 8px 20px;
     border: 2px solid transparent;
@@ -90,7 +90,30 @@ select.form-input
     color: var(--w-color);
     box-shadow: 0 2px 4px rgba(0,0,0, .3);
     cursor: pointer;
-}
+} */
+
+.btn {
+    /* Основные стили */
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--w-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    cursor: pointer;
+    
+    /* Критически важные свойства для авто-ширины */
+    display: inline-block; /* или inline-flex */
+    width: auto; /* Ширина по содержимому */
+    white-space: nowrap; /* Запрет переноса текста */
+    text-align: center;
+    
+    /* Отключение растягивания в flex-контейнерах */
+    align-self: flex-start;
+    flex-shrink: 0;
+    flex-grow: 0; /* Запрет растягивания */
+  }
+  
 
 .btn.sm 
 {
@@ -106,12 +129,12 @@ select.form-input
 
 .btn-primary
 {
-    background: var(--p-color);
+    background: var(--accent-color);
 }
 
 .btn-primary:hover 
 {
-    background: var(--p-hover);
+    background: var(--accent-hover);
 }
 
 .btn-secondary

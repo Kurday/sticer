@@ -15,7 +15,31 @@
 
 @media (max-width: 767px)
 {
+    /* _______________Мобильное меню________________ */
+
+    .burger-btn {
+        display: flex;
+    }
     
+    .header__nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--d-color);
+        transition: left 0.3s ease;
+        z-index: 100;
+    }
+    
+    .header__nav.active {
+        left: 0;
+    }
+    
+    .header__nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid #444;
+    }
 }
 
 @media (max-width: 567px)

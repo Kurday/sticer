@@ -2,6 +2,11 @@
 :root 
 {
     /* COLORS */
+    --accent-color: #f18a3a;
+    --accent-hover: #e07d2f;
+    --accent-active: #d17025;
+    --accent-disable: #f1b07a;
+
     --p-color: #05d;
     --p-hover: #06e;
     --p-active: #07f;
@@ -101,7 +106,7 @@ h1, h2, h3, h4, h5, h6
 { font-weight: bold; }
 
 p, a, span, label, li, address, time, b, strong, i, em, u, s, q 
-{ font-size: 16px; font-weight: normal; } 
+{ font-size: 14px; font-weight: normal; } 
 
 p { line-height: 1.4em; }
 
