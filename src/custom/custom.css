@@ -116,7 +116,7 @@ h3
 .header__nav
 {
     overflow-y: auto;
-    max-height: 800px;
+    max-height: 100vh;
 }
 
 .header__nav a
