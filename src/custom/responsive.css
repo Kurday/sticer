@@ -20,13 +20,22 @@
     .burger-btn {
         display: flex;
     }
+
+    .header
+    {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+    }
     
     .header__nav {
         position: fixed;
         top: 0px;
         left: -100%;
         width: 80%;
-        height: 100vh;
+        height: 1000vh;
+        max-height: 1000vh;
         background: var(--d-color);
         transition: left 0.3s ease;
         z-index: 100;
@@ -39,6 +48,14 @@
     .header__nav a {
         padding: 15px 0;
         border-bottom: 1px solid #444;
+    }
+    .header__icon
+    {
+        display: block;
+    }
+    .header__icon a
+    {
+        border-bottom: none;
     }
 }
 

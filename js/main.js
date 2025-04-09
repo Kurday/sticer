@@ -19,8 +19,8 @@ const swiper = new Swiper('.main__swiper', {
     spaceBetween: 20,
     speed: 500,
     autoplay: {
-      delay: 2500, // Задержка между слайдами (мс)
-      disableOnInteraction: false, // Продолжать после взаимодействия
+      delay: 2500, 
+      disableOnInteraction: false, 
     },
     pagination: {
       el: '.photo-swiper-pagination',
@@ -28,7 +28,7 @@ const swiper = new Swiper('.main__swiper', {
     },
   });
 
-
+// МЕНЮ БУРГЕР
 
   document.addEventListener('DOMContentLoaded', function() {
     const burgerBtn = document.querySelector('.burger-btn');
@@ -50,6 +50,38 @@ const swiper = new Swiper('.main__swiper', {
             burgerBtn.setAttribute('aria-expanded', 'false');
             if (headerNav) headerNav.classList.remove('active');
             document.body.style.overflow = '';
+        }
+    });
+});
+
+
+// аккордеон часто задаваемые вопросы 
+
+
+const questions = document.querySelectorAll('.question');
+
+questions.forEach((item) => {
+    item.addEventListener('click', () => {
+        const currentItem = item.parentElement;
+
+        document.querySelectorAll('.questions__item').forEach((el) => {
+            if (el !== currentItem) {
+                el.classList.remove('active');
+                el.querySelector('.answer').style.maxHeight = null;
+            }
+        });
+
+        const answer = currentItem.querySelector('.answer');
+        const isActive = currentItem.classList.contains('active');
+
+        if (isActive) {
+            // Закрыть
+            currentItem.classList.remove('active');
+            answer.style.maxHeight = null;
+        } else {
+            // Открыть
+            currentItem.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
         }
     });
 });

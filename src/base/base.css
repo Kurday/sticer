@@ -4,7 +4,7 @@
     /* COLORS */
     --accent-color: #f18a3a;
     --accent-hover: #e07d2f;
-    --accent-active: #d17025;
+    --accent-active: #d99159;
     --accent-disable: #f1b07a;
 
     --p-color: #05d;
@@ -87,6 +87,7 @@
     text-decoration: none;
     font-family: sans-serif;
     line-height: 1.4em;
+    color: #333;
 }
 
 body { background: var(--w-color); }
