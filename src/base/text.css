@@ -31,6 +31,8 @@
 .t-capit, 
 .t-capit.inner *
 { text-transform: capitalize; }
+.t-nowrap 
+{ white-space: nowrap; }
 
 /* FONT STYLE */
 .fs-normal, 

@@ -60,7 +60,7 @@
     --b-radius-l: 10px 0 0 10px;
 
     --b-radius1: 10px;
-    --b-radius2: 10px;
+    --b-radius2: 15px;
     --b-radius3: 10px;
     --b-radius4: 10px;
     --b-radius5: 10px;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6
 { font-weight: bold; }
 
 p, a, span, label, li, address, time, b, strong, i, em, u, s, q 
-{ font-size: 14px; font-weight: normal; } 
+{ font-size: 16px; font-weight: normal; } 
 
 p { line-height: 1.4em; }
 

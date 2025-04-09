@@ -222,6 +222,7 @@
    .f-x-m { align-items: center; }
 
    /* FLEX GAP */
+   .g-x0 { gap: 0px; }
    .g-x5 { gap: 5px; }
    .g-x10 { gap: 10px; }
    .g-x15 { gap: 15px; }

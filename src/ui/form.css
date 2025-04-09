@@ -101,17 +101,11 @@ select.form-input
     color: var(--w-color);
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
     cursor: pointer;
-    
-    /* Критически важные свойства для авто-ширины */
-    display: inline-block; /* или inline-flex */
-    width: auto; /* Ширина по содержимому */
-    white-space: nowrap; /* Запрет переноса текста */
+    transition: 0.5s;
+
+    width: auto; 
+    white-space: nowrap; 
     text-align: center;
-    
-    /* Отключение растягивания в flex-контейнерах */
-    align-self: flex-start;
-    flex-shrink: 0;
-    flex-grow: 0; /* Запрет растягивания */
   }
   
 
@@ -279,6 +273,7 @@ select.form-input
     border-radius: 30px;
     background: var(--w-color);
     box-shadow: 0 2px 4px rgba(0,0,0, .3);
+
 
     position: absolute;
     top: 1px; left: 1px;
