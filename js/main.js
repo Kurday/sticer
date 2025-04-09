@@ -38,6 +38,7 @@ const swiper = new Swiper('.main__swiper', {
         const isActive = this.classList.toggle('active');
         this.setAttribute('aria-expanded', isActive);
         if (headerNav) headerNav.classList.toggle('active');
+        document.body.style.overflow = isActive ? 'hidden' : '';
     });
     
     // Закрытие при клике вне меню
@@ -48,6 +49,7 @@ const swiper = new Swiper('.main__swiper', {
             burgerBtn.classList.remove('active');
             burgerBtn.setAttribute('aria-expanded', 'false');
             if (headerNav) headerNav.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 });

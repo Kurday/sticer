@@ -113,6 +113,11 @@ h3
     width: 120px;
     height: auto;
 }
+.header__nav
+{
+    overflow-y: auto;
+    max-height: 800px;
+}
 
 .header__nav a
 {
@@ -131,6 +136,10 @@ h3
     background: transparent;
     cursor: pointer;
     transition: 0.5s;
+
+    position: fixed;
+    z-index: 100;
+    right: 30px;
 }
 
 .burger-btn.active {
