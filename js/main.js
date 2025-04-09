@@ -23,7 +23,7 @@ const swiper = new Swiper('.main__swiper', {
       disableOnInteraction: false, // Продолжать после взаимодействия
     },
     pagination: {
-      el: '.swiper-wrapper-pagination',
+      el: '.photo-swiper-pagination',
       clickable: true,
     },
   });
