@@ -85,3 +85,55 @@ questions.forEach((item) => {
         }
     });
 });
+
+
+
+
+function toggleCustomInput(show) {
+  const customInputContainer = document.getElementById('customInputContainer');
+  const qtyCustomLabel = document.getElementById('custom_qty_label');
+  
+  if (show) {
+    customInputContainer.style.display = 'block';
+    qtyCustomLabel.style.display = 'none';
+  } else {
+    customInputContainer.style.display = 'none';
+    qtyCustomLabel.style.display = 'block';
+  }
+}
+// Скрыть/показать поле при смене радио кнопок
+document.querySelectorAll('input[name="quantity"]').forEach(el => {
+  el.addEventListener('change', function () {
+    toggleCustomInput(this.value === 'custom');
+  });
+});
+
+
+
+
+function toggleCustomSizeInput(show) {
+ console.log('log');
+ const customSizeLabel = document.getElementById('customSizeLabel');
+ const customSizeInput = document.getElementById('customSizeInput');
+
+  if(show)
+  {
+    customSizeLabel.style.display = 'none'
+    customSizeInput.style.display = 'block'
+  }  
+  else 
+  {
+    customSizeLabel.style.display = 'block'
+    customSizeInput.style.display = 'none'
+  }
+  
+ 
+
+ 
+}
+
+document.querySelectorAll('input[name="size"]').forEach(el => {
+  el.addEventListener('change', function () {
+    toggleCustomSizeInput(this.value === 'custom');
+  });
+});

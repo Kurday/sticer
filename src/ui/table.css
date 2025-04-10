@@ -9,7 +9,7 @@
 table, th, td 
 { 
     border-collapse: collapse; 
-    border: 1px solid var(--b-color); 
+    /* border: 1px solid var(--b-color);  */
     /* background: var(--w-color);  */
 }
 

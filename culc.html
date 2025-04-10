@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport"
+            content="width=device-width, user-scalable=yes " />
+        <title>Document</title>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="dev.css"></link>
+</head>
+
+<body>
+    <header class="header t-white py15">
+        <div class="container fx f-sb ">
+
+            <div class="header__menu fx f-m f-sb f-m-s fg1 ">
+                <a href="index.html"><img class="header__logo" src="./img/logo.webp"
+                        alt></a>
+
+                <div class="header__nav fx-n f-col f-m-row f-m-sb pl20 pb100 pb-s0 fg1"></divclass>
+                    <div class=" fx f-col f-m-row g-m10 ">
+                        <a href="sticker.html">Наклейки</a>
+                        <a href="pay.html">Оплата и доставка</a>
+                        <a href="#">Требования</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="fx f-col f-m-row g-m10">
+                        <a href="#">Корзина</a>
+                        <a href="#">Вход</a>
+                    </div>
+                    <div class="header__icon fx f-col  ">
+                        <div class="fx  g10">
+                            <a href=""><img  src="./img/icon/tel48.png" alt=""></a>
+                            <a href=""><img  src="./img/icon/mail48.png" alt=""></a>
+                            <a href=""><img  src="./img/icon/tg48.png" alt=""></a>
+                        </div>
+                        <p class="t-white ">+7 (495) 135-36-74</p>
+                    </div>
+                </div>
+                <!-- header__nav -->
+
+                <button class="burger-btn fx f-m f-c border2 rounded-2"
+                    aria-label="Открыть меню" aria-expanded="false">
+                    <div class="burger-btn__spans fx f-col f-sa">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+            </div>
+            <!-- header__menu -->
+
+        </div>
+        <!-- container -->
+
+    </header>
+
+    
+
+    <!--___________________ SECTION  STICKERS НАКЛЕЙКИ___________________  -->
+
+    <section class="culc">
+        <div class="container">
+            <h2 class="t-center mt100">Печать наклеек и стикеров в StickerCraft</h2>
+            <p class="t-center">У нас большой парк оборудования, который позволяет изготавливать быстро, практически любые тиражи.</p>
+            <div class="fx b-sh2 rounded-2  mt30 p20">
+                <!-- первая таблица с выбором бумаги -->
+                <!-- <table class="s12 p20 br"> 
+                    <thead>
+                        <tr>
+                            <th>Тип пленки</th>
+                            <th>Размер</th>
+                            <th>Тираж, шт</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" id="white-matte" name="type" value="4x4">
+                                <label class="option" for="white-matte">Белая матовая</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="size_custom" name="size" value="custom">
+                                <label class="option" for="size_custom">
+                                    Свой размер: 
+                                    <input type="text" name="custom_size" size="5" disabled>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="radio" id="qty_custom" name="quantity" value="custom">
+                                <label class="option" for="qty_custom">
+                                    Свой тираж: 
+                                    <input type="number" name="custom_quantity" min="1" disabled>
+                                </label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r1" name="type" value="Белая с глянцевой ламинацией">
+                                <label class="option" for="r1">Белая с глянцевой ламинацией</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s1" name="size" value="4x4">
+                                <label class="option" for="s1">4x4 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q1" name="quantity" value="85">
+                                <label class="option" for="q1">85 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r2" name="type" value="Прозрачная матовая">
+                                <label class="option" for="r2">Прозрачная матовая</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s2" name="size" value="5x5">
+                                <label class="option" for="s2">5x5 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q2" name="quantity" value="100">
+                                <label class="option" for="q2">100 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r3" name="type" value="Прозрачная глянцевая">
+                                <label class="option" for="r3">Прозрачная глянцевая</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s3" name="size" value="6x6">
+                                <label class="option" for="s3">6x6 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q3" name="quantity" value="200">
+                                <label class="option" for="q3">200 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r4" name="type" value="Серебряная">
+                                <label class="option" for="r4">Серебряная</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s4" name="size" value="7x7">
+                                <label class="option" for="s4">7x7 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q4" name="quantity" value="300">
+                                <label class="option" for="q4">300 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r5" name="type" value="Голографическая">
+                                <label class="option" for="r5">Голографическая</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s5" name="size" value="8x8">
+                                <label class="option" for="s5">8x8 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q5" name="quantity" value="400">
+                                <label class="option" for="q5">400 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r6" name="type" value="Белая с усиленным клеем">
+                                <label class="option" for="r6">Белая с усиленным клеем</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s6" name="size" value="9x9">
+                                <label class="option" for="s6">9x9 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q6" name="quantity" value="500">
+                                <label class="option" for="q6">500 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="r7" name="type" value="Крафтовая бумага">
+                                <label class="option" for="r7">Крафтовая бумага</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="s7" name="size" value="10x10">
+                                <label class="option" for="s7">10x10 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q7" name="quantity" value="1000">
+                                <label class="option" for="q7">1000 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="radio" id="s8" name="size" value="15x15">
+                                <label class="option" for="s8">15x15 см</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="q8" name="quantity" value="2000">
+                                <label class="option" for="q8">2000 шт</label>
+                            </td>
+                            <td class="price">850 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>             -->
+                <table class="s12 s-l6 p20 t-center">
+                    <thead>
+                      <tr class="t-left">
+                        <th>Тип пленки</th>
+                        <th>Размер, см</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type1" name="type" value="white-matte">
+                          <label class="option" for="type1">Белая матовая</label>
+                        </td>
+                        <!-- <td>
+                          <input type="radio" id="size1" name="size" value="custom">
+                          <label class="option" for="size1">Свой размер</label>
+                        </td> -->
+                        <td>
+
+                          <input type="radio" id="size1"  name="size" value="custom" onchange="toggleCustomSizeInput(true)">
+                          <label class="option"  id="customSizeLabel" for="size1">Свой размер</label>
+
+                          <div class="option fx f-m" name="size" id="customSizeInput" style="display: none;">
+                            <input class="t-center " type="text" name="custom_width" placeholder="4"  >
+                            <span>x</span>
+                            <input class="t-center " type="text" name="custom_height" placeholder="4" ">
+                          </div>
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type2" name="type" value="white-glossy">
+                          <label class="option" for="type2">Белая с глянцевой ламинацией</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size2" name="size" value="4x4">
+                          <label class="option" for="size2">4x4 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type3" name="type" value="transparent-matte">
+                          <label class="option" for="type3">Прозрачная матовая</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size3" name="size" value="5x5">
+                          <label class="option" for="size3">5x5 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type4" name="type" value="transparent-glossy">
+                          <label class="option" for="type4">Прозрачная глянцевая</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size4" name="size" value="6x6">
+                          <label class="option" for="size4">6x6 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type5" name="type" value="silver">
+                          <label class="option" for="type5">Серебряная</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size5" name="size" value="7x7">
+                          <label class="option" for="size5">7x7 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type6" name="type" value="gold">
+                          <label class="option" for="type6">Золотая</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size6" name="size" value="8x8">
+                          <label class="option" for="size6">8x8 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type7" name="type" value="holographic">
+                          <label class="option" for="type7">Голографическая</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size7" name="size" value="9x9">
+                          <label class="option" for="size7">9x9 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type8" name="type" value="white-strong-glue">
+                          <label class="option" for="type8">Белая с усиленным клеем</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size8" name="size" value="10x10">
+                          <label class="option" for="size8">10x10 </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="type9" name="type" value="kraft-paper">
+                          <label class="option" for="type9">Крафтовая бумага</label>
+                        </td>
+                        <td>
+                          <input type="radio" id="size9" name="size" value="15x15">
+                          <label class="option" for="size9">15x15 </label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  
+
+
+
+
+
+
+
+                  <table class="s12 s-l6 mt50 mt-m0 p20 t-center">
+                    <thead>
+                      <tr class="t-left">
+                        <th>Тираж, шт</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!-- <td>
+                          <input type="radio" id="qty1" name="quantity" value="10">
+                          <label class="option" for="qty1">Свой тираж</label>
+                        </td> -->
+                        <td>
+                            <input type="radio" id="qty_custom" name="quantity" value="custom" onchange="toggleCustomInput(true)">
+                            <label id="custom_qty_label" class="option" for="qty_custom">Свой тираж</label>
+                            <!-- Чтобы добавить отступ справа для placeholder, используйте padding-right в стилях input, например: style="padding-right: 10px;" -->
+                            <div class="option fx f-m" id="customInputContainer" style="display: none;" >
+                              <input    type="number" name="custom_quantity" min="1" max="50000" placeholder="Введите тираж, 
+                              мин. — 1, макс. — 50000">
+                            </div>
+                            
+                          </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty2" name="quantity" value="20">
+                          <label class="option" for="qty2">35</label>
+                        </td>
+                        <td>180 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty3" name="quantity" value="30">
+                          <label class="option" for="qty3">50</label>
+                        </td>
+                        <td>240 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty4" name="quantity" value="50">
+                          <label class="option" for="qty4">100</label>
+                        </td>
+                        <td>380 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty5" name="quantity" value="100">
+                          <label class="option" for="qty5">200</label>
+                        </td>
+                        <td>700 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty6" name="quantity" value="100">
+                          <label class="option" for="qty6">300</label>
+                        </td>
+                        <td>700 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty7" name="quantity" value="100">
+                          <label class="option" for="qty7">400</label>
+                        </td>
+                        <td>700 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty8" name="quantity" value="100">
+                          <label class="option" for="qty8">500</label>
+                        </td>
+                        <td>700 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" id="qty9" name="quantity" value="100">
+                          <label class="option" for="qty9">1000</label>
+                        </td>
+                        <td>700 ₽</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+           
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+
+
+
+
+    <footer class="footer mt100 bg-accent py50">
+        <div class="container fx f-col f-c f-m ">
+
+            <div class="fx f-c f-l-sb   ">
+                <img class="s6 s-l4 s-w2" src="./img/logo.webp" alt="">
+                <div class="fx f-col f-w-row f-m f-c mt30 mt-l0 t-center g10  s12 s-l8 ">
+                    <a class="">2025 © Sticker-craft.ru - интернет-магазин стикеров</a>
+                    <a>Согласие на обработку персональных данных</a>
+                </div>
+            </div>
+
+            <hr class="mt30">
+          
+            <div class="fx f-c f-l-s f-m g30 s12  mt30 ">
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Контакты</a>
+                <a href="#">Наклейки на заказ</a>
+                <a href="#">Карта сайта</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+
+
+            <div class="fx s12 mt30">
+                <div class="fx s6 f-sa f-m">
+                    <img class="footer__bank " src="./img/банковская карта.png" alt="">
+                    <div class=" fx f-c f-m  ">
+                        <p>Пн-Пт с 10:00 до 19:00 <br> Сб-Вс Выходной</p>   
+                    </div>
+                </div>
+                <div class="fx f-sa f-m s6  t-center ">
+                    <div class="footer__icon fx f-sb f-c f-m   ">
+                        <img src="./img/icon/tel48.png" alt="">
+                        <img src="./img/icon/mail48.png" alt="">
+                        <img src="./img/icon/tg48.png" alt="">
+                    </div>
+                    <p>г. Москва, ул. Декабристов, 10, корп. 2 </p>
+                </div>
+            </div>
+            
+          
+        </div>
+    </footer>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+
+</html>

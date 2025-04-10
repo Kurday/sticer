@@ -17,6 +17,11 @@
 {
     /* _______________Мобильное меню________________ */
 
+    body
+    {
+        padding-top: 63px;
+    }
+
     .burger-btn {
         display: flex;
     }
