@@ -14,8 +14,7 @@ body, a, p
     font-family: "Roboto Condensed", sans-serif;
 }
 
-h1, h2, h3
-{
+h1, h2, h3{
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
     color: var(--accent-color)!important;
@@ -71,6 +70,12 @@ h3, h3 *
 {
     font-size: 24px;
     color: var(--accent-color);
+}
+
+h2, h2 *
+{
+    font-size: 24px;
+    /* color: var(--accent-color); */
 }
 
 
@@ -162,6 +167,7 @@ h3, h3 *
     max-height: 100vh;
 }
 
+
 .header__nav nav a
 {
     font-size: 16px;
@@ -170,10 +176,18 @@ h3, h3 *
     border-radius: var(--b-radius1); 
 }
 
-.header__nav nav a:hover{
-    background-color: #f07e13;
+.header__nav nav a:hover {
+    background-color: #030303;
     transition: 0.5s;
 }
+
+.header__nav nav a:active {
+    background-color: #000000; 
+    transform: scale(0.98); 
+    transition: 0.2s; 
+}
+
+
 
 .header__cart-count
 {
@@ -253,7 +267,7 @@ h3, h3 *
 
 .main__swiper
 {
-    height: 100vh;
+    max-height: 900px;
 }
 
 .main__swiper img
@@ -312,6 +326,7 @@ h3, h3 *
   .stickers__card a {
     height: 100%;
     z-index: 1;
+   
   }
 
 
@@ -385,8 +400,6 @@ h3, h3 *
 
 .question 
 {
-    
-
     position: relative;
     cursor: pointer;
     font-weight: 400;
@@ -397,13 +410,23 @@ h3, h3 *
     margin-top: 10px;
 }
 
-
+/* .questions__item i
+{
+    font-size: 18px;
+} */
 
 
 .question:hover
 {
     background-color: var(--accent-hover);
     transition: 0.8s;
+}
+.question i 
+{
+    color: var(--accent-color);
+}
+.question:hover i{
+    color: white;
 }
 
 .questions__item.active .question::before 
@@ -461,7 +484,10 @@ h3, h3 *
 footer a, footer p{
     color: white;
 }
-
+.footer i 
+{
+    color: #000000;
+}
 .footer__icon img
 {
     width: 40px;
@@ -478,11 +504,16 @@ footer a, footer p{
 
 
  /* <!--___________________ SECTION  MAIN FORM___________________  --> */
+.request
+{
+    background-color: #000000;
+}
 
  .request__form
  {
     overflow: visible;
     z-index: 2;
+    background-color: white;
  }
  .request__form::after {
     content: '';
@@ -497,7 +528,7 @@ footer a, footer p{
     background-repeat: no-repeat;
     background-origin: content-box;
     padding: 10px; 
-    opacity: 0.5;
+    /* opacity: 0.5; */
     z-index: -100;
     transform: scaleX(-1);
 }
@@ -570,3 +601,4 @@ input[type="radio"]:checked + .option {
     height: auto;
  
 }
+
