@@ -89,6 +89,21 @@ h3, h3 *
     padding: 20px; /* Добавляем отступы для лучшего вида */
 }
 
+.gradient-accent 
+{
+    border-top: 3px solid transparent; /* Прозрачная граница (если нужна) */
+   
+    background-image: linear-gradient(
+    to bottom,
+    rgba(241, 138, 58, 0.2),
+    rgba(255, 255, 255, 0.8) 15%,
+    rgba(255, 255, 255, 1) 100%
+    );
+    background-origin: border-box;
+    background-clip: padding-box;
+    padding: 20px; /* Добавляем отступы для лучшего вида */
+}
+
 .stylized__title 
 {
     color: black;
