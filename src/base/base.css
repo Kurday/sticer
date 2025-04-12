@@ -32,7 +32,7 @@
     --b-active: #333;
     --b-disable: #444;
 
-    --d-color: #222;
+    --d-color: rgb(24, 28, 32);
     --d-hover: #444;
     --d-active: #555;
     --d-disable: #777;
@@ -87,7 +87,7 @@
     text-decoration: none;
     font-family: sans-serif;
     line-height: 1.4em;
-    color: #333;
+    color: rgb(24, 28, 32);
 }
 
 body { background: var(--w-color); }

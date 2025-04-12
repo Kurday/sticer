@@ -168,6 +168,8 @@ h2, h2 *
 }
 
 
+
+
 .header__nav nav a
 {
     font-size: 16px;
@@ -181,6 +183,11 @@ h2, h2 *
     transition: 0.5s;
 }
 
+.header__nav nav a:hover  i 
+{
+    color: white;
+}
+
 .header__nav nav a:active {
     background-color: #000000; 
     transform: scale(0.98); 
@@ -192,6 +199,11 @@ h2, h2 *
 .header__cart-count
 {
     background-color: aliceblue;
+}
+
+.header__cart_nav i 
+{
+    color: rgb(24, 28, 32);
 }
 
 
@@ -410,10 +422,6 @@ h2, h2 *
     margin-top: 10px;
 }
 
-/* .questions__item i
-{
-    font-size: 18px;
-} */
 
 
 .question:hover
@@ -429,10 +437,7 @@ h2, h2 *
     color: white;
 }
 
-.questions__item.active .question::before 
-{
-    filter: brightness(0) invert(1); 
-}
+
 .questions__item.active .question {
     background-color: var(--accent-active); 
     color: white; 
@@ -504,10 +509,7 @@ footer a, footer p{
 
 
  /* <!--___________________ SECTION  MAIN FORM___________________  --> */
-.request
-{
-    background-color: #000000;
-}
+
 
  .request__form
  {
