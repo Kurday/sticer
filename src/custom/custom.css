@@ -313,6 +313,7 @@ h3, h3 *
     position: absolute;
     width: 100%;
     bottom: 40px;
+    z-index: 5;
 }
 
 .swiper-pagination-bullet {
