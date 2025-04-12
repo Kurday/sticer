@@ -1,4 +1,5 @@
-.bg { background: rgba(0,0,0, .75); }
+/* .bg { background: rgba(0,0,0, .75); } */
+.bg { background: rgb(24, 28, 32) }
 .bg-w { background: rgba(255,255,255, .25); }
 .border { border: 1px solid var(--d-hover); }
 .border2 { border: 1px solid var(--w-hover); }

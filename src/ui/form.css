@@ -7,7 +7,7 @@
 .form-label
 {
     font-size: 14px;
-    color: var(--s-color); ;
+    color: var(--b-color); ;
     display: block;
     margin: 5px 0;
 }
@@ -19,6 +19,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
+
 }
 
 .form-input.sm
@@ -38,7 +39,9 @@
 .form-input:focus 
 {
     outline: none;
-    border-color: var(--p-active);
+    /* border-color: var(--s-active); */
+    border: 2px solid var(--s-active);
+
 }
 
 .form-input:disabled

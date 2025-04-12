@@ -2,7 +2,8 @@ const swiper = new Swiper('.main__swiper', {
     loop: true,
     slidesPerView: 1, 
     spaceBetween: 0,
-    speed: 500,
+    speed: 2400,
+    parallax:true,
     autoplay: {
       delay: 2500, // Задержка между слайдами (мс)
       disableOnInteraction: false, // Продолжать после взаимодействия
@@ -12,6 +13,9 @@ const swiper = new Swiper('.main__swiper', {
       clickable: true,
     },
   });
+
+
+
 
   const swiper2 = new Swiper('.photo__swiper', {
     loop: true,
@@ -128,12 +132,21 @@ function toggleCustomSizeInput(show) {
   }
   
  
-
- 
 }
 
 document.querySelectorAll('input[name="size"]').forEach(el => {
   el.addEventListener('change', function () {
     toggleCustomSizeInput(this.value === 'custom');
   });
+});
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  if (header) {
+    const headerHeight = header.offsetHeight;
+    document.body.style.paddingTop = `${headerHeight}px`;
+  }
 });
