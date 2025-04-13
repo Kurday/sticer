@@ -607,15 +607,15 @@ input[type="radio"]:checked + .option {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.1; /* Прозрачность фона */
-    z-index: -1; /* Отправляем под контент */
+    opacity: 0.1; 
+    z-index: -1; 
 }
 
-/* Стили для формы (чтобы она была чётко видна) */
+
 .registration .registration__form {
-    position: relative; /* Чтобы форма была выше фона */
-    z-index: 1; /* Поднимаем контент над псевдоэлементом */
-    background: rgba(255, 255, 255, 1); /* Полупрозрачный белый фон формы */
+    position: relative; 
+    z-index: 1; 
+    background: rgba(255, 255, 255, 1); 
     padding: 30px;
     border-radius: 10px;
 }
@@ -623,11 +623,11 @@ input[type="radio"]:checked + .option {
  /* <!--___________________ SECTION  Registration --> */
 
  .authorization {
-    position: relative; /* Для корректного позиционирования псевдоэлемента */
-    min-height: 100vh; /* Минимальная высота на весь экран */
+    position: relative; 
+    min-height: 100vh; 
 }
 
-/* Псевдоэлемент для фона (лучше, чем opacity, чтобы не затемнять форму) */
+
 .authorization::before {
     content: "";
     position: absolute;
@@ -639,15 +639,17 @@ input[type="radio"]:checked + .option {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.1; /* Прозрачность фона */
-    z-index: -1; /* Отправляем под контент */
+    opacity: 0.1; 
+    z-index: -1; 
 }
 
-/* Стили для формы (чтобы она была чётко видна) */
+
+
+
 .authorization .authorization__form {
-    position: relative; /* Чтобы форма была выше фона */
-    z-index: 1; /* Поднимаем контент над псевдоэлементом */
-    background: rgba(255, 255, 255, 1); /* Полупрозрачный белый фон формы */
+    position: relative; 
+    z-index: 1; 
+    background: rgba(255, 255, 255, 1); 
     padding: 30px;
     border-radius: 10px;
 }
