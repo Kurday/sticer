@@ -69,6 +69,7 @@
     --b-shadow: 0 0 10px rgba(0,0,0,.2);
     --b-shadow1: 0 0 10px rgba(0,0,0,.2);
     --b-shadow2: 0 0 10px rgba(0,0,0,.2);
+    --b-shadow2-hover: 0 0 10px rgba(241,138,58,.7);
     --b-shadow3: 0 5px 20px rgba(0,0,0,.5);
 
     --t-shadow: 0 0 5px rgba(0,0,0,.2);

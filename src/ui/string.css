@@ -51,6 +51,28 @@ hr
     font-size: 24px;
 }
 
+.icon24 
+{
+    font-size: 24px;
+}
+
+
+
+.icon36 
+{
+    font-size: 36px;
+}
+
+.icon42 
+{
+    font-size: 42px;
+}
+
+.icon64 
+{
+    font-size: 64px;
+}
+
 .icon-min
 {
     font-size: 18px;
@@ -61,3 +83,6 @@ hr
     width: 24px;
     height: 24px;
 }
+
+
+

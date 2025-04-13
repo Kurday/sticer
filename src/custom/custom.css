@@ -119,12 +119,6 @@ h3, h3 *
 
   
 
-.icon
-{
-    width: 50px;
-    height: 50px;
-}
-
 
 .before::before
 {
@@ -568,7 +562,7 @@ footer a, footer p{
 
 #customSizeInput input 
 {
-    width: 40px;
+    
 }
 .option 
 {

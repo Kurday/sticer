@@ -17,6 +17,11 @@
 .t-strike, 
 .t-strike.inner *
 { text-decoration: line-through; }
+.t-dots,
+.t-dots.inner * {
+  text-decoration: underline dotted; 
+  text-underline-offset: 4px; 
+}
 
 /* TEXT TRANSFORM */
 .t-normal, 
@@ -33,6 +38,8 @@
 { text-transform: capitalize; }
 .t-nowrap 
 { white-space: nowrap; }
+
+
 
 /* FONT STYLE */
 .fs-normal, 
