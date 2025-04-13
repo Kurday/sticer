@@ -46,6 +46,9 @@
 .bg-black,
 .bg-black.inner *
 { background: var(--b-color) !important; }
+.bg-gray,
+.bg-gray.inner *
+{ background: var(--g-color) !important; }
 .bg-primary,
 .bg-primary.inner *
 { background: var(--p-color) !important; }

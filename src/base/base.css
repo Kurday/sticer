@@ -42,11 +42,11 @@
     --l-active: #eee;
     --l-disable: #ddd;
 
-    --g-color: #590;
-    --g-hover: #6b0;
-    --g-active: #7c0;
-    --g-disable: #7c6;
-
+    --g-color: #f3f4f6;
+    --g-hover: #e5e7eb;
+    --g-active: #d1d5db;
+    --g-disable: #9ca3af;  
+      
     --r-color: #a20;
     --r-hover: #c20;
     --r-active: #d30;

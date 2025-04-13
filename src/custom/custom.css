@@ -590,12 +590,12 @@ input[type="radio"]:checked + .option {
 
  /* <!--___________________ SECTION  Registration --> */
 
- .registration {
-    position: relative; /* Для корректного позиционирования псевдоэлемента */
-    min-height: 100vh; /* Минимальная высота на весь экран */
+ /* .registration {
+    position: relative; 
+    min-height: 100vh; 
 }
 
-/* Псевдоэлемент для фона (лучше, чем opacity, чтобы не затемнять форму) */
+
 .registration::before {
     content: "";
     position: absolute;
@@ -618,11 +618,50 @@ input[type="radio"]:checked + .option {
     background: rgba(255, 255, 255, 1); 
     padding: 30px;
     border-radius: 10px;
-}
+} */
+
+
+/* ___________________ */
+
+
+.registration {
+    position: relative;
+    padding: 100px 0;
+    min-height: 100vh;
+    overflow: hidden; /* Скрываем выходящие части фона */
+  }
+  
+  .registration::before {
+    content: "";
+    position: absolute;
+    top: -10%; /* Расширяем фон за границы */
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    background-image: url("../../img/mod6.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+    transition: transform 0.7s linear; /* Плавность движения */
+    transform: translate(
+        calc(var(--parallax-x, 0) * 1),
+        calc(var(--parallax-y, 0) * 1)
+      );
+  }
+
+  .registration .registration__form {
+    position: relative; 
+    z-index: 1; 
+    background: rgba(255, 255, 255, 1); 
+    padding: 30px;
+    border-radius: 10px;
+  }
 
  /* <!--___________________ SECTION  Registration --> */
 
- .authorization {
+ /* .authorization {
     position: relative; 
     min-height: 100vh; 
 }
@@ -652,8 +691,42 @@ input[type="radio"]:checked + .option {
     background: rgba(255, 255, 255, 1); 
     padding: 30px;
     border-radius: 10px;
-}
+} */
+/* __________________- */
 
+
+
+
+.authorization {
+    position: relative;
+    overflow: hidden; /* Скрываем выходящие части фона */
+  }
+  
+  .authorization::before {
+    content: "";
+    position: absolute;
+    top: -10%; /* Расширяем фон за границы */
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    background-image: url("../../img/mod5.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+    transition: transform 0.7s linear; /* Плавность движения */
+    transform: translate(
+        calc(var(--parallax-x, 0) * 1),
+        calc(var(--parallax-y, 0) * 1)
+      );
+  }
+
+  .authorization .authorization__form {
+    position: relative; 
+    z-index: 1; 
+    background: rgba(255, 255, 255, 1); 
+  }
 
  /* <!--___________________ SECTION  CART КОРЗИНА  --> */
 
@@ -661,10 +734,6 @@ input[type="radio"]:checked + .option {
 
 
 
-.cart__wrapper_head
-{
-    background-color: #f3f4f6;
-}
 .cart__item
 {
     border-bottom: 1px solid var(--w-active);
@@ -672,6 +741,40 @@ input[type="radio"]:checked + .option {
 .cart__item img{
     width: 70px;
     height: auto;
- 
 }
 
+
+.cart {
+    position: relative;
+    overflow: hidden; /* Скрываем выходящие части фона */
+  }
+  
+  .cart::before {
+    content: "";
+    position: absolute;
+    top: -44%;
+    left: -10%;
+    right: -10%;
+    bottom: -10%;
+    background-image: url("../../img/mod2.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+    transition: transform 0.7s linear; /* Плавность движения */
+  
+  }
+
+  .cart .cart__form {
+    position: relative; 
+    z-index: 1; 
+    background: rgba(255, 255, 255, 1); 
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .cart__wrapper
+  {
+    background: rgba(255, 255, 255, 1);  
+  }
