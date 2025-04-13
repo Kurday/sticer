@@ -176,7 +176,6 @@ h3, h3 *
 
 .header__nav nav a
 {
-    font-size: 16px;
     transition: all 0.3s ease;
     padding: 12px 25px;
     border-radius: var(--b-radius1); 
@@ -215,12 +214,11 @@ h3, h3 *
 {
     display: none;
 }
-.header__icon img
-{
-    width: 50px;
-    height: 50px;
-}
 
+.header__icon i 
+{
+    color: #fff;
+}
 
 /* Стили для бургер-кнопки */
 
@@ -590,51 +588,19 @@ input[type="radio"]:checked + .option {
 
  /* <!--___________________ SECTION  Registration --> */
 
- /* .registration {
-    position: relative; 
-    min-height: 100vh; 
-}
-
-
-.registration::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("../../img/mod7.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; 
-    z-index: -1; 
-}
-
-
-.registration .registration__form {
-    position: relative; 
-    z-index: 1; 
-    background: rgba(255, 255, 255, 1); 
-    padding: 30px;
-    border-radius: 10px;
-} */
-
-
-/* ___________________ */
 
 
 .registration {
     position: relative;
     padding: 100px 0;
     min-height: 100vh;
-    overflow: hidden; /* Скрываем выходящие части фона */
+    overflow: hidden; 
   }
   
   .registration::before {
     content: "";
     position: absolute;
-    top: -10%; /* Расширяем фон за границы */
+    top: -10%; 
     left: -10%;
     right: -10%;
     bottom: -10%;
@@ -644,7 +610,9 @@ input[type="radio"]:checked + .option {
     background-repeat: no-repeat;
     opacity: 0.2;
     z-index: -1;
-    transition: transform 0.7s linear; /* Плавность движения */
+    transition: transform 0.7s linear; 
+    filter: blur(5px);
+    will-change: transform, filter;
     transform: translate(
         calc(var(--parallax-x, 0) * 1),
         calc(var(--parallax-y, 0) * 1)
@@ -659,63 +627,33 @@ input[type="radio"]:checked + .option {
     border-radius: 10px;
   }
 
- /* <!--___________________ SECTION  Registration --> */
-
- /* .authorization {
-    position: relative; 
-    min-height: 100vh; 
-}
 
 
-.authorization::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("../../img/mod5.jfif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; 
-    z-index: -1; 
-}
-
-
-
-
-.authorization .authorization__form {
-    position: relative; 
-    z-index: 1; 
-    background: rgba(255, 255, 255, 1); 
-    padding: 30px;
-    border-radius: 10px;
-} */
-/* __________________- */
-
+ /* <!--___________________ SECTION  authorization --> */
 
 
 
 .authorization {
     position: relative;
-    overflow: hidden; /* Скрываем выходящие части фона */
+    overflow: hidden; 
   }
   
   .authorization::before {
     content: "";
     position: absolute;
-    top: -10%; /* Расширяем фон за границы */
+    top: -10%; 
     left: -10%;
     right: -10%;
     bottom: -10%;
     background-image: url("../../img/mod5.jfif");
-    background-size: cover;
+    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;
     z-index: -1;
-    transition: transform 0.7s linear; /* Плавность движения */
+    transition: transform 0.7s linear; 
+    filter: blur(3px);
+    will-change: transform, filter;
     transform: translate(
         calc(var(--parallax-x, 0) * 1),
         calc(var(--parallax-y, 0) * 1)
@@ -746,22 +684,25 @@ input[type="radio"]:checked + .option {
 
 .cart {
     position: relative;
-    overflow: hidden; /* Скрываем выходящие части фона */
+    overflow: hidden; 
   }
   
   .cart::before {
     content: "";
     position: absolute;
     top: -44%;
-    left: -10%;
+    left: 10%;
     right: -10%;
     bottom: -10%;
     background-image: url("../../img/cart-fone.png");
-    background-position: center;
+    background-position: 51% 30%;
     background-repeat: no-repeat;
+    background-size:contain;
     opacity: 0.2;
     z-index: -1;
-    transition: transform 0.7s linear; /* Плавность движения */
+    transition: transform 0.7s linear; 
+    filter: blur(3px);
+    will-change: transform, filter;
   
   }
 
