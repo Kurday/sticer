@@ -588,6 +588,71 @@ input[type="radio"]:checked + .option {
 
 
 
+ /* <!--___________________ SECTION  Registration --> */
+
+ .registration {
+    position: relative; /* Для корректного позиционирования псевдоэлемента */
+    min-height: 100vh; /* Минимальная высота на весь экран */
+}
+
+/* Псевдоэлемент для фона (лучше, чем opacity, чтобы не затемнять форму) */
+.registration::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../img/mod7.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Прозрачность фона */
+    z-index: -1; /* Отправляем под контент */
+}
+
+/* Стили для формы (чтобы она была чётко видна) */
+.registration .registration__form {
+    position: relative; /* Чтобы форма была выше фона */
+    z-index: 1; /* Поднимаем контент над псевдоэлементом */
+    background: rgba(255, 255, 255, 1); /* Полупрозрачный белый фон формы */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+ /* <!--___________________ SECTION  Registration --> */
+
+ .authorization {
+    position: relative; /* Для корректного позиционирования псевдоэлемента */
+    min-height: 100vh; /* Минимальная высота на весь экран */
+}
+
+/* Псевдоэлемент для фона (лучше, чем opacity, чтобы не затемнять форму) */
+.authorization::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../img/mod5.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Прозрачность фона */
+    z-index: -1; /* Отправляем под контент */
+}
+
+/* Стили для формы (чтобы она была чётко видна) */
+.authorization .authorization__form {
+    position: relative; /* Чтобы форма была выше фона */
+    z-index: 1; /* Поднимаем контент над псевдоэлементом */
+    background: rgba(255, 255, 255, 1); /* Полупрозрачный белый фон формы */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
  /* <!--___________________ SECTION  CART КОРЗИНА  --> */
 
 
