@@ -90,8 +90,8 @@ questions.forEach((item) => {
     });
 });
 
-
-
+// __________________________________________________________________________
+// КАЛЬКУЛЯТОР БЛОКИ С КАСТОМНЫМИ ЗНАЧЕНИЯМИ
 
 function toggleCustomInput(show) {
   const customInputContainer = document.getElementById('customInputContainer');
@@ -151,6 +151,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// __________________________________________________________________________
+
 // паралакс
 /**
  * Инициализирует параллакс-эффект для указанного элемента
@@ -193,3 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initMouseParallax('.authorization', 0.02); // Эффект для авторизации 
   initMouseParallax('.cart', 0.02); // Эффект для корзины 
 });
+
+
+
+
+
+

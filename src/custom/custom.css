@@ -9,12 +9,12 @@ body
     line-height: 150%;
 }
 
-body, a, p
+body, a, p, button
 {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-h1, h2, h3{
+h1, h2, h3, h1 *, h2 *, h3 *{
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
     color: var(--accent-color)!important;
@@ -446,8 +446,9 @@ h3, h3 *
     color: white; 
 }
 
-.questions__item.active .question::before {
-    transform: translateY(-50%) rotate(180deg); /* Поворот стрелки */
+.questions__item.active .question i {
+    /* transform:  rotate(180deg);  */
+    color: #000000;
 }
 
 
@@ -487,6 +488,12 @@ h3, h3 *
 {
     color: #721c24;
 }
+
+
+
+
+
+/* ___________________________ FOOTER _______________________________ */
 
 footer a, footer p{
     color: white;
@@ -660,11 +667,16 @@ input[type="radio"]:checked + .option {
       );
   }
 
-  .authorization .authorization__form {
+.authorization .authorization__form {
     position: relative; 
     z-index: 1; 
     background: rgba(255, 255, 255, 1); 
+
+    
   }
+
+
+ 
 
  /* <!--___________________ SECTION  CART КОРЗИНА  --> */
 
