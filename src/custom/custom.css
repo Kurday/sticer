@@ -429,7 +429,7 @@ h3, h3 *
 
 .question:hover
 {
-    background-color: var(--accent-hover);
+    background-color: var(--accent-color);
     transition: 0.8s;
 }
 .question i 
@@ -442,13 +442,13 @@ h3, h3 *
 
 
 .questions__item.active .question {
-    background-color: var(--accent-active); 
+    /* background-color: var(--accent-active);  */
     color: white; 
 }
 
 .questions__item.active .question i {
     /* transform:  rotate(180deg);  */
-    color: #000000;
+    color: var(--d-color);
 }
 
 
