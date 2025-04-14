@@ -61,7 +61,10 @@
 @media (max-width: 767px)
 {
   
- 
+    .authorization::before 
+    {
+        background-size: 100%;
+    }
 
 
 }

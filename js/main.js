@@ -151,50 +151,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// __________________________________________________________________________
-
-// паралакс
-/**
- * Инициализирует параллакс-эффект для указанного элемента
- * @param {string} selector - CSS-селектор элемента
- * @param {number} [intensity=0.03] - Сила эффекта (рекомендуется 0.01-0.05)
- */
-function initMouseParallax(selector, intensity = 0.03) {
-  const section = document.querySelector(selector);
-  if (!section) return;
-
-  // Создаем CSS-переменные если их нет
-  section.style.setProperty('--parallax-x', '0');
-  section.style.setProperty('--parallax-y', '0');
-
-  // Добавляем необходимые CSS-стили
-  const style = document.createElement('style');
-  style.textContent = `
-    ${selector}::before {
-      transform: translate(
-        calc(var(--parallax-x, 0) * 1),
-        calc(var(--parallax-y, 0) * 1)
-      );
-    }
-  `;
-  document.head.appendChild(style);
-
-  // Обработчик движения мыши
-  section.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 2; // -1..1
-    const y = (e.clientY / window.innerHeight - 0.5) * 2; // -1..1
-    
-    section.style.setProperty('--parallax-x', `${x * intensity * 100}%`);
-    section.style.setProperty('--parallax-y', `${y * intensity * 100}%`);
-  });
-}
-
-// Инициализация для нужных элементов
-document.addEventListener('DOMContentLoaded', () => {
-  initMouseParallax('.registration', 0.03);  // Эффект для регистрации
-  initMouseParallax('.authorization', 0.02); // Эффект для авторизации 
-  initMouseParallax('.cart', 0.02); // Эффект для корзины 
-});
 
 
 
