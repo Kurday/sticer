@@ -10,6 +10,11 @@
         display: flex;
     }
 
+    .header__logo
+    {
+        width: 140px;
+    }
+
     .header
     {
         position: fixed;
@@ -21,22 +26,21 @@
     .header__nav {
         position: fixed;
         top: 0px;
-        left: -100%;
-        width: 80%;
+        right: -100%;
+        width: 30%;
         height: 1000vh;
         max-height: 1000vh;
         background: var(--d-color);
-        transition: left 0.3s ease;
+        transition: right 0.3s ease;
         z-index: 100;
     }
     
     .header__nav.active {
-        left: 0;
+        right: 0;
     }
     
     .header__nav nav a {
         padding: 15px 0;
-        border-bottom: 1px solid #444;
         border-radius: 0; 
     }
     .header__nav nav a:hover {
