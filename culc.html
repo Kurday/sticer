@@ -83,17 +83,17 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>
+                        <td class="s6">
                           <input type="radio" id="type1" name="type" value="white-matte">
                           <label class="option" for="type1">Белая матовая</label>
                         </td>
 
-                        <td>
+                        <td class="s6">
 
                           <input type="radio" id="size1"  name="size" value="custom" onchange="toggleCustomSizeInput(true)">
-                          <label class="option"  id="customSizeLabel" for="size1">Свой размер</label>
+                          <label class="option "  id="customSizeLabel" for="size1">Свой размер</label>
 
-                          <div class="option fx-n " name="size" id="customSizeInput" style="display: none;">
+                          <div class="option fx-n g10 " name="size" id="customSizeInput" style="display: none;">
                             <input class="form-input w20  t-center" type="text" name="custom_width" placeholder="4"  >
                             <span>x</span>
                             <input class="form-input w20 t-center" type="text" name="custom_height" placeholder="4" ">
@@ -186,7 +186,7 @@
                   </table>
 
 
-                  <table class="s12 s-l6 mt50 mt-m0 p20 t-center">
+                  <table class="s12 s-l6 mt50 mt-m0 p20 t-center ">
                     <thead>
                       <tr class="t-left">
                         <th>Тираж, шт</th>
@@ -195,74 +195,74 @@
                     </thead>
                     <tbody>
                       <tr>
-                       
-                        <td>
-                            <input type="radio" id="qty_custom" name="quantity" value="custom" onchange="toggleCustomInput(true)">
-                            <label id="custom_qty_label" class="option" for="qty_custom">Свой тираж</label>
+                        <td class="s6 ">
+                            <input class="" type="radio" id="qty_custom" name="quantity" value="custom" onchange="toggleCustomInput(true)">
+                            <label id="custom_qty_label" class="option " for="qty_custom">Свой тираж</label>
                             <!-- Чтобы добавить отступ справа для placeholder, используйте padding-right в стилях input, например: style="padding-right: 10px;" -->
-                            <div class="option fx f-m" id="customInputContainer" style="display: none;" >
-                              <input    type="number" name="custom_quantity" min="1" max="50000" placeholder="Введите тираж, 
-                              мин. — 1, макс. — 50000">
+                            <div class="option fx f-m " id="customInputContainer" style="display: none;" >
+                              <input class=""    type="number" name="custom_quantity" min="1" max="50000" placeholder="Введите тираж">
                             </div>
                             
                           </td>
-                        <td></td>
+                        <td class="s6"></td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty2" name="quantity" value="20">
                           <label class="option" for="qty2">35</label>
                         </td>
-                        <td>180 ₽</td>
+                        <td class="">
+                          <label class=" fx f-c f-m fw700" for="">180</label>
+                        </td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty3" name="quantity" value="30">
                           <label class="option" for="qty3">50</label>
                         </td>
-                        <td>240 ₽</td>
+                        <td class="fw700">240 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty4" name="quantity" value="50">
                           <label class="option" for="qty4">100</label>
                         </td>
-                        <td>380 ₽</td>
+                        <td class="fw700">380 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty5" name="quantity" value="100">
                           <label class="option" for="qty5">200</label>
                         </td>
-                        <td>700 ₽</td>
+                        <td class="fw700">700 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty6" name="quantity" value="100">
                           <label class="option" for="qty6">300</label>
                         </td>
-                        <td>700 ₽</td>
+                        <td class="fw700">700 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty7" name="quantity" value="100">
                           <label class="option" for="qty7">400</label>
                         </td>
-                        <td>700 ₽</td>
+                        <td class="fw700">700 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty8" name="quantity" value="100">
                           <label class="option" for="qty8">500</label>
                         </td>
-                        <td>700 ₽</td>
+                        <td class="fw700">700 ₽</td>
                       </tr>
                       <tr>
                         <td>
                           <input type="radio" id="qty9" name="quantity" value="100">
                           <label class="option" for="qty9">1000</label>
                         </td>
-                        <td>700 ₽</td>
+                        <td class="fw700">700 ₽</td>
                       </tr>
                     </tbody>
                   </table>
@@ -281,10 +281,10 @@
               <div class="fx f-col g20 mt20">
                 <label class="form-label" for="file-input">Загрузите ваш макет</label>
                 
-                <div class="file-upload">
+                <div class="file-upload  ">
                   <input type="file" id="file-input" class="file-input d-none" accept="image/*">
-                  <label for="file-input" class="file-label option fx ai-center  g10 p20 border2 rounded-1" style="cursor: pointer;">
-                    <div class="fx f-c f-m g20">
+                  <label for="file-input" class="file-label option fx ai-center  g10 p20 border2 rounded-1 " style="cursor: pointer;">
+                    <div class="fx f-c f-m g20 ">
                       <i class="fa-solid fa-cloud-arrow-up"></i>
                       <span>Выберите файл или перетащите его сюда</span>
                     </div>
@@ -294,10 +294,12 @@
             </div>
 
             <div class="b-sh2 bg-dark rounded-2 fx f-sb f-m  p20 mt50 form-area">
-              <p class="t-white t-dots">Бесплатная доставка</p>
+              <p class="t-white">Бесплатная доставка</p>
               <p class="t-white fs7 fw700">Цена<span class="t-accent fs7 fw700 ml20">1 490 ₽</span> </p>
               <button class="btn btn-primary rounded-2 ">В корзину</button>
             </div>
+
+          
             
 
         </div>
@@ -307,32 +309,32 @@
 
 
 
-    <footer class="footer  bg-accent py50 mt50">
+    <footer class="footer  bg-accent py50">
       <div class="container fx f-col f-c f-m ">
-  
+
           <div class="fx f-c f-l-sb   ">
-              <img class="s6 s-l4 s-w2" src="./img/logo.webp" alt>
+              <a href="index.html" class="s6 s-l4 s-w2"><img  src="./img/logo.webp" alt></a>
               <div
                   class="fx f-col f-w-row f-m f-c mt30 mt-l0 t-center g10  s12 s-l8 ">
-                  <a class>2025 © Sticker-craft.ru - интернет-магазин
-                      стикеров</a>
-                  <a>Согласие на обработку персональных данных</a>
+                  <p class>2025 © Sticker-craft.ru - интернет-магазин
+                      стикеров</p>
+                  <a class="t-dots">Согласие на обработку персональных данных</a>
               </div>
           </div>
-  
+
           <hr class="mt30">
-  
+
           <div class="fx f-c  f-m g30 s12  mt30 ">
-              <a href="#">Политика конфиденциальности</a>
+              <a href="#" class="t-dots">Политика конфиденциальности</a>
           </div>
-  
+
           <div class="fx s12 mt30">
               <div class="fx f-col f-l-rowr s6 f-sa f-m">
                   <img class="footer__bank "
                       src="./img/card6.png" alt>
-                  <div class=" fx f-c f-m  ">
-                      <p> <i class="mr10 icon24 fa-regular fa-clock"></i>Пн-Пт с 10:00 до 19:00 </i>
-                      <br> <i class="mr10 icon24 fa-solid fa-ban" ></i>Сб-Вс Выходной  </p>
+                  <div class=" fx f-col">
+                      <p class="fx f-m"><i class="mr10 icon24 fa-regular fa-clock "></i>Пн-Пт с 10:00 до 19:00 </i></p>
+                      <p class="fx f-m mt10"><i class="mr10 icon24 fa-solid fa-ban " ></i>Сб-Вс Выходной  </p>
                   </div>
               </div>
               <div class="fx f-sa f-m s6  t-center ">
@@ -344,14 +346,14 @@
                   <p>г. Москва, ул. Декабристов, 10, корп. 2 </p>
               </div>
           </div>
-  
+
       </div>
   </footer>
-  
+
   <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
-  
-  </body>
-  
-  </html>
+
+</body>
+
+</html>

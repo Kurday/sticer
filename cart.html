@@ -71,7 +71,7 @@
 
 <section class="cart pt50 pb50">
     <div class="container">
-        <h2>Корзина</h2>
+        <h2 class="t-center">Корзина</h2>
 
         <div class="cart__form fx b-sh2 rounded-2 p20 mt50">
             <form class="fx f-col f-l-row s12" action="#" method="POST">
@@ -143,6 +143,111 @@
           
         </div>
         <!-- cart__wrapper -->
+
+        <div class="cart__order mt50 b-sh2 rounded-2 p20">
+            <h4>Оформление заказа</h4>
+
+            <form action="" class="fx  mt30">
+
+                <div class="fx s12 ">
+                        <!-- ФИЗ ЮР ЛИЦО -->
+                        <div class="form-area fx g20 s6">
+                            <label class="radio-wrapper">
+                                <input type="radio" name="buyer-type" value="individual" checked>
+                                <span class="custom-radio"></span>
+                                <span>Физ. лицо</span>
+                            </label>
+                            
+                            <label class="radio-wrapper">
+                                <input type="radio" name="buyer-type" value="legal">
+                                <span class="custom-radio"></span>
+                                <span>Юр. лицо</span>
+                            </label>
+                        </div>
+                    <!-- ГОРОД ИНДЕКС -->
+                    <div class="form-area fx g20 pl20">
+                        <div class="fx f-col">
+                        <label class="form-label" for="city">Город</label>
+                        <input type="text" id="city" name="city" class="form-input" placeholder="Введите ваш город">
+                        </div>
+                    
+                        <div class="fx f-col" style="max-width: 150px;">
+                        <label class="form-label" for="zip">Индекс</label>
+                        <input type="text" id="zip" name="zip" class="form-input" placeholder="101000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fx s12">
+                    <!-- wrapper для второго стобца ФИО ПОЧТА ТЕЛЕФОН АДРЕС -->
+                    <div class="s6  fx f-col">
+                    
+                        <div class="form-area ">
+                            <label class="form-label" for="full-name">Ф.И.О.</label>
+                            <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Введите ваше Ф.И.О.">
+                            </div>
+                        
+                            <div class="form-area ">
+                            <label class="form-label" for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Введите ваш E-Mail">
+                        </div>
+                    
+                    
+                        <div class="form-area">
+                            <label class="form-label" for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Введите ваш телефон">
+                        </div>
+                        
+                        <div class="form-area">
+                            <label class="form-label" for="address">Адрес</label>
+                            <input type="text" id="address" name="address" class="form-input" placeholder="Введите ваш адрес">
+                        </div>
+                    </div>
+                    <!-- wrapper для первого первого столбца -->
+                    <div class="  s6 fx f-col pl20">
+                            <!-- Сумма заказа -->
+                            <div class="form-area ">
+                                <label class="form-label" for="order-amount">Сумма заказа</label>
+                                <input type="text" id="order-amount" name="order-amount" class="form-input" value="5000" disabled>
+                            </div>
+                            <!-- Способ доставки -->
+                            <div class="form-area ">
+                                <label class="form-label" for="delivery-method">Способ доставки</label>
+                                <select id="delivery-method" name="delivery-method" class="form-input">
+                                <option value="courier">Курьер</option>
+                                <option value="pickup">Самовывоз</option>
+                                <option value="mail">Почта</option>
+                                </select>
+                            </div>
+                            <!-- Способ оплаты -->
+                            <div class="form-area ">
+                                <label class="form-label" for="payment-method">Способ оплаты</label>
+                                <select id="payment-method" name="payment-method" class="form-input">
+                                <option value="card">Картой</option>
+                                <option value="cash">Наличные</option>
+                                <option value="online">Онлайн платеж</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    
+                </div>
+                <!-- блок1 -->
+
+                <div class="form-area s12">
+                    <label class="form-label" for="comments">Комментарии к заказу</label>
+                    <textarea id="comments" name="comments" class="form-input" placeholder="Введите комментарии к заказу"></textarea>
+                </div>
+
+                <div>
+                    <button class="btn btn-primary">отправить</button>
+                </div>
+                  
+            </form>
+            
+        </div>
+          
+          
     </div>
     <!-- container -->
 </section>
@@ -150,32 +255,32 @@
 
 
 
-<footer class="footer  bg-accent py50 mt50">
+<footer class="footer  bg-accent py50">
     <div class="container fx f-col f-c f-m ">
 
         <div class="fx f-c f-l-sb   ">
-            <img class="s6 s-l4 s-w2" src="./img/logo.webp" alt>
+            <a href="index.html" class="s6 s-l4 s-w2"><img  src="./img/logo.webp" alt></a>
             <div
                 class="fx f-col f-w-row f-m f-c mt30 mt-l0 t-center g10  s12 s-l8 ">
-                <a class>2025 © Sticker-craft.ru - интернет-магазин
-                    стикеров</a>
-                <a>Согласие на обработку персональных данных</a>
+                <p class>2025 © Sticker-craft.ru - интернет-магазин
+                    стикеров</p>
+                <a class="t-dots">Согласие на обработку персональных данных</a>
             </div>
         </div>
 
         <hr class="mt30">
 
         <div class="fx f-c  f-m g30 s12  mt30 ">
-            <a href="#">Политика конфиденциальности</a>
+            <a href="#" class="t-dots">Политика конфиденциальности</a>
         </div>
 
         <div class="fx s12 mt30">
             <div class="fx f-col f-l-rowr s6 f-sa f-m">
                 <img class="footer__bank "
                     src="./img/card6.png" alt>
-                <div class=" fx f-c f-m  ">
-                    <p> <i class="mr10 icon24 fa-regular fa-clock"></i>Пн-Пт с 10:00 до 19:00 </i>
-                    <br> <i class="mr10 icon24 fa-solid fa-ban" ></i>Сб-Вс Выходной  </p>
+                <div class=" fx f-col">
+                    <p class="fx f-m"><i class="mr10 icon24 fa-regular fa-clock "></i>Пн-Пт с 10:00 до 19:00 </i></p>
+                    <p class="fx f-m mt10"><i class="mr10 icon24 fa-solid fa-ban " ></i>Сб-Вс Выходной  </p>
                 </div>
             </div>
             <div class="fx f-sa f-m s6  t-center ">

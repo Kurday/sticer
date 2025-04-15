@@ -98,11 +98,11 @@ function toggleCustomInput(show) {
   const qtyCustomLabel = document.getElementById('custom_qty_label');
   
   if (show) {
-    customInputContainer.style.display = 'block';
+    customInputContainer.style.display = 'flex';
     qtyCustomLabel.style.display = 'none';
   } else {
     customInputContainer.style.display = 'none';
-    qtyCustomLabel.style.display = 'block';
+    qtyCustomLabel.style.display = 'flex';
   }
 }
 // Скрыть/показать поле при смене радио кнопок
@@ -123,11 +123,11 @@ function toggleCustomSizeInput(show) {
   if(show)
   {
     customSizeLabel.style.display = 'none'
-    customSizeInput.style.display = 'block'
+    customSizeInput.style.display = 'flex'
   }  
   else 
   {
-    customSizeLabel.style.display = 'block'
+    customSizeLabel.style.display = 'flex'
     customSizeInput.style.display = 'none'
   }
   
